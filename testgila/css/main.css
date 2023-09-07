@@ -1,0 +1,113 @@
+
+/* Declarar colores a utilizar en el diseño */
+:root{
+    --LightGreen: #DAF7A6;
+    --White: #ffffff;
+    --Black: #000000;
+}
+
+
+/* Clases utilizadas para maquetar */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+.MainContainer{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.Header_Footer{
+    padding: .5rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--LightGreen);
+    font-size: 1.2rem;
+}
+
+.Content{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    overflow: hidden;
+}
+
+    .Container_Form{
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: .7rem;
+    }
+
+        .Container_Form textarea{
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            resize: none;
+            outline: none;
+            padding: .2rem;
+            border-radius: .3rem;
+        }
+
+        .Container_Form label{
+            font-weight: bold;
+        }
+
+        .Container_Form select{
+            width: 100%;
+            padding: .2rem;
+            font-weight: bold;
+            outline: none;
+            text-align: center;
+            cursor: pointer;
+            border-radius: .3rem;
+        }
+
+        .Container_Form button{
+            margin-top: 2rem;
+            width: 100%;
+            padding: .5rem;
+            font-weight: bold;
+            outline: none;
+            text-align: center;
+            border: 2px solid var(--LightGreen);
+            background-color: var(--White);
+            cursor: pointer;
+            border-radius: .3rem;
+        }
+
+        .Container_Form button:hover{
+            background-color: var(--LightGreen);
+            cursor: pointer;
+        }
+
+    .Container_Log{
+        overflow: auto;
+        padding: .7rem;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        
+    }
+
+    .Container_Log table{
+        width: 100%;
+        padding: 0;
+        border: 0;
+    }
+
+        .Container_Log table td{
+            vertical-align: top;
+            border: .3rem;
+            font-size: .9rem;
+            padding: .3rem;
+        }
+
